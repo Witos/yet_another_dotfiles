@@ -5,9 +5,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Use release branch
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Or build from source code
-" Install yarn from https://yarnpkg.com
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -69,10 +66,6 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-
-" Auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
 
 filetype plugin on
 filetype indent on
