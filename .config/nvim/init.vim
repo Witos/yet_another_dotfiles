@@ -10,10 +10,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
+Plug 'ayu-theme/ayu-vim' " or other package manager
 Plug 'kien/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/goyo.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -27,6 +29,7 @@ set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set number relativenumber
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -108,8 +111,9 @@ set smartcase       " ...unless we type a capital
 " ================ Visuals ==========================
 let g:airline_powerline_fonts = 1
 let g:airline_theme='minimalist'
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+set termguicolors
+let ayucolor="mirage" " for mirage version of theme
+colorscheme ayu
 
 " ================ Custom Settings ========================
 so ~/.config/nvim/settings.vim
