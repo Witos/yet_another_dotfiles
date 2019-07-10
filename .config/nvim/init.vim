@@ -23,6 +23,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'vim-scripts/YankRing.vim'
 Plug 'majutsushi/tagbar'
+Plug 'sheerun/vim-polyglot' " lazy loaded
 " Initialize plugin system
 call plug#end()
 
