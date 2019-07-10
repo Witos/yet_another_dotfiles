@@ -16,6 +16,13 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'neomake/neomake'
+Plug 'vim-scripts/YankRing.vim'
+Plug 'majutsushi/tagbar'
 " Initialize plugin system
 call plug#end()
 
@@ -114,6 +121,7 @@ let g:airline_theme='minimalist'
 set termguicolors
 let ayucolor="mirage" " for mirage version of theme
 colorscheme ayu
+set pumblend=10
 
 " ================ Custom Settings ========================
 so ~/.config/nvim/settings.vim
