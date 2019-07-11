@@ -223,4 +223,4 @@ nnoremap <C-Left> <C-w><
 nnoremap <C-Right>  <C-w>>
 
 " Search
-nnoremap <silent> K :Ag <C-R><C-W><CR>
+nnoremap <silent> K :Rg <C-R><C-W><CR>

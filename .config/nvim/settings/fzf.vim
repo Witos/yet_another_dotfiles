@@ -51,6 +51,9 @@ function! FloatingFZF()
         \ 'height':height,
         \ }
   let win =  nvim_open_win(buf, v:true, opts)
+  call nvim_win_set_option(win, 'winblend', 10)
+
+
   call setwinvar(win, '&number', 0)
   call setwinvar(win, '&relativenumber', 0)
 endfunction

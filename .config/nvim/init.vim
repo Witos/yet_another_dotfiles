@@ -4,26 +4,29 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Use release branch
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ayu-theme/ayu-vim' " or other package manager
-Plug 'kien/ctrlp.vim'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/goyo.vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ayu-theme/ayu-vim' " or other package manager
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neomake/neomake'
-Plug 'vim-scripts/YankRing.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neomake/neomake'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot' " lazy loaded
+Plug 'taigacute/gruvbox9'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+Plug 'vim-scripts/YankRing.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -117,11 +120,13 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " ================ Visuals ==========================
-let g:airline_powerline_fonts = 1
-let g:airline_theme='minimalist'
+"let g:airline_powerline_fonts = 1
+"let g:airline_theme='minimalist'
 set termguicolors
-let ayucolor="mirage" " for mirage version of theme
-colorscheme ayu
+" let ayucolor="mirage" " for mirage version of theme
+" colorscheme ayu
+set background=dark
+colorscheme gruvbox9
 set pumblend=10
 
 " ================ Custom Settings ========================
