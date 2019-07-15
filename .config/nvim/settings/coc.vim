@@ -112,5 +112,5 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-let g:coc_global_extensions = ['coc-html','coc-css','coc-snippets','coc-prettier','coc-pairs','coc-json','coc-python', 'coc-highlight','coc-git','coc-emoji','coc-lists','coc-post','coc-yaml','coc-sh']
+let g:coc_global_extensions = ['coc-html','coc-css','coc-snippets','coc-prettier','coc-pairs','coc-json','coc-python','coc-git','coc-emoji','coc-lists','coc-post','coc-yaml','coc-sh']
 

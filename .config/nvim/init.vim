@@ -23,10 +23,12 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-abolish'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/YankRing.vim'
+Plug 'TaDaa/vimade'
 " Initialize plugin system
 call plug#end()
 
@@ -123,10 +125,10 @@ set smartcase       " ...unless we type a capital
 "let g:airline_powerline_fonts = 1
 "let g:airline_theme='minimalist'
 set termguicolors
-" let ayucolor="mirage" " for mirage version of theme
-" colorscheme ayu
-set background=dark
-colorscheme gruvbox9
+let ayucolor="mirage" " for mirage version of theme
+colorscheme ayu
+"set background=dark
+"colorscheme gruvbox9
 set pumblend=10
 
 " ================ Custom Settings ========================
