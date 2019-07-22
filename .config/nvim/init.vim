@@ -24,11 +24,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/YankRing.vim'
 Plug 'TaDaa/vimade'
+Plug 'enomsg/vim-haskellConcealPlus'
 " Initialize plugin system
 call plug#end()
 

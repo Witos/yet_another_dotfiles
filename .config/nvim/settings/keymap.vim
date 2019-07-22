@@ -79,8 +79,8 @@ nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical<CR>
 
 " ,q to toggle quickfix window (where you have stuff like Ag)
 " ,oq to open it back up (rare)
-nmap <silent> ,qc :cclose<CR>
-nmap <silent> ,qo :copen<CR>
+nmap <silent> <Leader>qc :cclose<CR>
+nmap <silent> <Leader>qo :copen<CR>
 
 "Move back and forth through previous and next buffers
 "with ,z and ,x
@@ -194,8 +194,8 @@ nmap <A-N> :NERDTreeToggle<CR>
 " which will move us around by functions
 nnoremap <silent> <A-j> }
 nnoremap <silent> <A-k> {
-autocmd FileType ruby map <buffer> <A-j> ]m
-autocmd FileType ruby map <buffer> <A-k> [m
+autocmd FileType python map <buffer> <A-j> ]m
+autocmd FileType python map <buffer> <A-k> [m
 autocmd FileType rspec map <buffer> <A-j> }
 autocmd FileType rspec map <buffer> <A-k> {
 autocmd FileType javascript map <buffer> <A-k> }
